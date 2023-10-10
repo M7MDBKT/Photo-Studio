@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: url(img/parallax1.jpg) no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    top: 0;
+    z-index: 50;
+}
+
+
+.container {
+    width: 60%;
+    margin: 100px auto;
+  }
+
+
+.header-txt{
+    background-color: rgb(40, 37, 37);
+    width: max-content;
+    color: white;
+    padding: 10px 30px;
+    position: absolute;
+    left: 40%;
+    bottom: 35%;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    word-spacing: 4px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
+.navbar-left a:hover{
+    background-color: grey;
+    color: black;
+    padding: 10px;
+}
+.navbar-left i{
+   color: black
+}
+
+.navbar-left ul{
+    list-style: none;
+}
+
+.navbar-left ul li{
+    display: inline-block;
+    margin-left:20px;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.navbar-left ul li:hover{
+    background-color: grey;
+    padding: 10px;
+    color: black;
+}
+
+
+.navbar-right{
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.navbar-right:hover{
+    background-color: red;
+    padding: 10px;
+}
+
+
+.menu {
+    font-size: 25px;
+    cursor: pointer;
+    display: none !important;
+  }
+
+
+
+/* ABOUT ME */
+
+
+.about-up{
+    text-align: center;
+}
+
+.about-up h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: grey;
+    
+}
+
+.about-up h5{
+    color: grey;
+    text-align: italic;
+    margin-bottom: 20px;
+}
+
+
+.about-up p{
+    margin-top: 10px;
+    text-align:justify;
+    line-height: 2;
+    color: grey;
+}
+
+
+.about-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.about-down-left{
+    width: 45%;
+}
+
+.about-down-left h4{
+    text-align: center;
+}
+
+
+.about-down-left img{
+    width: 90%;
+    margin-top: 50px;
+    opacity: 0.8;
+
+}
+
+.about-down-left img:hover{
+    opacity: 1;
+}
+
+
+
+.about-down-right{
+    width: 45%;
+}
+
+.about-down-right p{
+    line-height: 2;
+    text-align: justify;
+    color: grey;
+}
+
+
+.stats h2{
+    text-align: center;
+    color: grey;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 18px;
+
+}
+
+.stats h4{
+    letter-spacing: 10px;
+    color: grey;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 30px 0;
+}
+.stats .full90pr{
+    display: flex;
+    align-items: center;
+}
+.stats .full90{
+    background-color: rgb(65, 64, 64);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 90%;
+}
+
+.stats .less90{
+    background-color: lightgray;
+    width: 10%;
+    padding: 10px;
+    color: lightgray;
+}
+
+.stats .full85pr{
+    display: flex;
+    align-items: center;
+}
+.stats .full85{
+    background-color: rgb(65, 64, 64);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 85%;
+}
+
+.stats .less85{
+    background-color: lightgray;
+    width: 15%;
+    padding: 20px;
+    color: lightgray;
+}
+
+.stats .full70pr{
+    display: flex;
+    align-items: center;
+}
+.stats .full70{
+    background-color: rgb(65, 64, 64);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 70%;
+}
+
+.stats .less70{
+    background-color: lightgray;
+    width: 30%;
+    padding: 20px;
+    color: lightgray;
+}
+
+/* PORTFOLIO */
+.spread{
+    background-image: url(img/parallax2.jpg);
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    top: 0;
+    z-index: 20;
+}
+
+.portbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 30px;
+
+}
+
+.portbar div{
+    width: 15%;
+    margin-left: 120px;
+    font-size: 25px;
+    color: white;
+}
+
+.port-txt{
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    font-size: 35px;
+    position: absolute;
+    top:55%;
+    left: 40%;
+
+}
+
+
+
+/* WORK GALLERY */
+
+.work > *{
+    margin-bottom: 20px;
+}
+
+.work h3{
+    font-weight: lighter;
+    color: grey;
+    text-align: center;
+    font-size: 30px;
+}
+
+.work p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: grey;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery div{
+    width: 23%;
+    cursor: pointer;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.gallery img:hover{
+    opacity: 0.8;
+}
+
+.work button{
+    border: none;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 42%;
+    cursor: pointer;
+    background-color: lightgray;
+    font-size: 15px;
+}
+
+.work button:hover{
+    background-color: grey;
+    color: black;
+}
+
+
+/* CONTACT */
+
+.contacthead{
+    background-image: url(img/parallax3.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    height: 60vh;
+    position: relative;
+    top: 0;
+    z-index: 15;
+}
+
+.contheadtxt{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: lighter;
+
+    position: absolute;
+    left: 42%;
+    top: 53%;
+}
+
+.contactdownpar{
+    margin-top: 50px;
+}
+
+.contactdownpar > *{
+    margin-bottom: 20px;
+}
+
+.contactdownpar h3{
+    color: grey;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.contactdownpar p{
+    text-align: center;
+    color: grey;
+}
+
+
+.contactloc{
+    display: flex;
+    gap: 15px;
+}
+
+.map{
+    width: 30%;
+}
+
+.map img{
+    width: 100%;
+
+}
+
+.info{
+    color: grey;
+    font-size: 25px;
+    width: 65%;
+}
+
+.info > *{
+    margin-bottom: 20px;
+}
+
+.info i{
+    margin-right: 5px;
+}
+
+.info input{
+    padding: 15px 50px;
+    margin: auto;
+}
+
+.info .wide{
+    padding: 15px 190px;
+}
+
+.info .mail{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.info button{
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.info button:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+footer{
+    background-color: rgb(39, 38, 38);
+    padding: 100px;
+    text-align: center;
+}
+footer > * {
+    margin-bottom: 20px;
+}
+footer:hover{
+    background-color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 15px;
+}
+footer a:hover{
+    background-color: grey;
+    color: black;
+}
+
+footer p{
+    margin-top: 40px;
+    color: white;
+    font-size: 30px;
+}
+
+footer p i{
+    cursor: pointer;
+}
+
+footer p i:hover{
+    color: grey;
+}
+
+footer h5{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .contquary{
+        width: 90%;
+        margin: 50px auto;
+    }
+    
+    .navbar-left ul{
+      display: none !important;
+    }
+    .menu {
+      display: block !important;
+    }
+
+    .search{
+      display: none !important;
+
+    }
+
+    .header{
+        background: url(parallax1480.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 0;
+        z-index: 50;
+    }
+
+    .header-txt{
+        position: absolute;
+        left: 50px;
+    }
+
+    .about-down-right{
+        display: none;
+    }
+
+    .about-down-left{
+        width: 100%;
+    }
+
+    .about-down-left h4{
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .about-down-left img{
+        width: 350px;
+        margin-left: 35px;
+    }
+
+    .about2{
+        margin-bottom: 0;
+    }
+
+    .portbar{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .spread{
+        background-image: url(parallax2480.jpg);
+        position: relative;
+        top: 0px;
+        z-index: 10;
+    }
+    
+    .portbar div{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        margin-right: 80px;
+        line-height: 1.5;
+    }
+    
+    .port-txt{
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        font-size: 35px;
+        position: absolute;
+        top:200px;
+        left: 27%;
+        
+    
+    }
+
+    
+
+    .work p{
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .gallery{
+        flex-direction: column;
+        width:10px;
+    }
+
+    .work img{
+        width: 400px;
+    }
+
+    .contacthead{
+        background-image: url(parallax3.jpg);
+        position: relative;
+        z-index: 5;
+    }
+
+    .contacthead h1{
+        position: absolute;
+        left: 120px;
+    }
+
+    .contactloc{
+        flex-direction: column;
+    }
+
+    .map{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+    }
+    .info h4{
+        font-size: 18px;
+    }
+
+   input{
+    width: 300px;
+     margin: 10px;
+    }
+
+
+    .info .mail{
+     width: 300px;
+     margin: 0px;
+    }
+
+    .info .wide{
+        width: 55px;
+        margin: 0px;}
+
+
+    .info p{
+        font-size: 18px;
+    }
+  }
